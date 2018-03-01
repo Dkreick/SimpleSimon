@@ -519,7 +519,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -593,6 +593,21 @@ Prefab:
     - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -967,8 +982,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1583065538}
-        m_MethodName: HighlightButton
-        m_Mode: 3
+        m_MethodName: MakeSequence
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1029,6 +1044,7 @@ MonoBehaviour:
   - {fileID: 2010432025}
   - {fileID: 546433711}
   sequence: 
+  index: 1
 --- !u!1001 &1916580670
 Prefab:
   m_ObjectHideFlags: 0
@@ -1084,7 +1100,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -1129,6 +1145,26 @@ Prefab:
     - target: {fileID: 1263965207591256, guid: b7d5804fc5dea7f448df037b21633468, type: 2}
       propertyPath: m_Name
       value: ButtonRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7d5804fc5dea7f448df037b21633468, type: 2}
@@ -1188,7 +1224,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -1262,6 +1298,26 @@ Prefab:
     - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_Colors.m_NormalColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1343,7 +1399,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -1417,6 +1473,31 @@ Prefab:
     - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114620325214295564, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633608457352642, guid: b7d5804fc5dea7f448df037b21633468,
+        type: 2}
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
