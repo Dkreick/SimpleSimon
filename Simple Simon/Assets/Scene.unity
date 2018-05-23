@@ -499,6 +499,7 @@ MonoBehaviour:
   sequence: 
   isPlayerTurn: 0
   sequenceStep: 0
+  playButton: {fileID: 1583065533}
 --- !u!4 &763918372
 Transform:
   m_ObjectHideFlags: 0
@@ -572,7 +573,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -1169,7 +1170,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -1328,7 +1329,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
@@ -1538,7 +1539,7 @@ Prefab:
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 224426425642359388, guid: b7d5804fc5dea7f448df037b21633468,
         type: 2}

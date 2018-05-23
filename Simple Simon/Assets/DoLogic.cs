@@ -9,14 +9,12 @@ public class DoLogic : MonoBehaviour
     public List<int> sequence = new List<int>();
     public bool isPlayerTurn;
     public int sequenceStep;
+    public GameObject playButton;
 
     void Start()
     {
         sequenceStep = 0;
         isPlayerTurn = false;
-        sequence.Add((int)Random.Range(0, 3));
-        sequence.Add((int)Random.Range(0, 3));
-        sequence.Add((int)Random.Range(0, 3));
         sequence.Add((int)Random.Range(0, 3));
     }
 
@@ -45,8 +43,10 @@ public class DoLogic : MonoBehaviour
         }
         if (sequenceStep == sequence.Count)
         {
+            isPlayerTurn = false;       
             sequence.Add((int)Random.Range(0, 3));
             sequenceStep = 0;
+            playButton.GetComponent<Button>().interactable = true;
         }
     }
 
