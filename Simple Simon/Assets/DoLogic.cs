@@ -37,9 +37,17 @@ public class DoLogic : MonoBehaviour
             else
             {
                 Debug.Log("MAL");
+                //DisplayLoseMessage();
+                sequenceStep = 0;
+                sequence.Clear();
+                return;
             }
         }
-
+        if (sequenceStep == sequence.Count)
+        {
+            sequence.Add((int)Random.Range(0, 3));
+            sequenceStep = 0;
+        }
     }
 
     IEnumerator HighlightButton()
