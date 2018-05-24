@@ -31,14 +31,12 @@ public class DoLogic : MonoBehaviour
         {
             if (sequence[sequenceStep] == indexButton)
             {
-                Debug.Log("BIEN");
                 sequenceStep++;
                 scoreText.GetComponent<Text>().text = "SCORE: " + sequenceStep;
             }
             else
             {
-                Debug.Log("MAL");
-                DisplayLoseMessage();
+                gameOverText.SetActive(true);
                 sequenceStep = 0;
                 sequence.Clear();
                 playButton.GetComponent<Button>().interactable = true;
@@ -52,11 +50,6 @@ public class DoLogic : MonoBehaviour
             sequenceStep = 0;
             playButton.GetComponent<Button>().interactable = true;
         }
-    }
-
-    void DisplayLoseMessage()
-    {
-        gameOverText.SetActive(true);
     }
 
     IEnumerator HighlightButton()
