@@ -10,6 +10,8 @@ public class DoLogic : MonoBehaviour
     public bool isPlayerTurn;
     public int sequenceStep;
     public GameObject playButton;
+    public GameObject gameOverText;
+    public GameObject scoreText;
 
     void Start()
     {
@@ -31,13 +33,15 @@ public class DoLogic : MonoBehaviour
             {
                 Debug.Log("BIEN");
                 sequenceStep++;
+                scoreText.GetComponent<Text>().text = "SCORE: " + sequenceStep;
             }
             else
             {
                 Debug.Log("MAL");
-                //DisplayLoseMessage();
+                DisplayLoseMessage();
                 sequenceStep = 0;
                 sequence.Clear();
+                playButton.GetComponent<Button>().interactable = true;
                 return;
             }
         }
@@ -48,6 +52,11 @@ public class DoLogic : MonoBehaviour
             sequenceStep = 0;
             playButton.GetComponent<Button>().interactable = true;
         }
+    }
+
+    void DisplayLoseMessage()
+    {
+        gameOverText.SetActive(true);
     }
 
     IEnumerator HighlightButton()
