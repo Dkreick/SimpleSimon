@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class DoLogic : MonoBehaviour
 {
     public GameObject[] buttons = new GameObject[4];
-    public AudioClip[] sounds = new AudioClip[4];
     public List<int> sequence = new List<int>();
     public bool isPlayerTurn;
     public int sequenceStep;
@@ -57,10 +56,7 @@ public class DoLogic : MonoBehaviour
     {
         for (int i = 0; i < sequence.Count; i++)
         {
-            AudioSource audio = new AudioSource();
-            Debug.Log(sounds[i]);
-            audio.clip = sounds[i];
-            audio.Play();
+            buttons[sequence[i]].GetComponent<AudioSource>().Play();
             CanvasGroup canvasGroup = buttons[sequence[i]].GetComponent<CanvasGroup>();
             while (canvasGroup.alpha < 1)
             {
