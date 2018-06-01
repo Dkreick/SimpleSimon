@@ -652,11 +652,6 @@ MonoBehaviour:
   - {fileID: 2108430320}
   - {fileID: 2010432025}
   - {fileID: 546433711}
-  sounds:
-  - {fileID: 8300000, guid: 6b9b37abb8ca4014bab564704fea10eb, type: 3}
-  - {fileID: 8300000, guid: e9128220e4b0ba440b4a019e76561d9e, type: 3}
-  - {fileID: 8300000, guid: c870537358736a142aad8f29299a5a12, type: 3}
-  - {fileID: 8300000, guid: a61d05b3f6002fe41993a175ab585dda, type: 3}
   sequence: 
   isPlayerTurn: 0
   sequenceStep: 0

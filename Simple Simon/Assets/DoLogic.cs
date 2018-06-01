@@ -31,6 +31,8 @@ public class DoLogic : MonoBehaviour
         {
             if (sequence[sequenceStep] == indexButton)
             {
+                buttons[sequence[sequenceStep]].GetComponent<AudioSource>().Play();
+                StartCoroutine(OnClickButton(indexButton));
                 sequenceStep++;
                 scoreText.GetComponent<Text>().text = "SCORE: " + sequenceStep;
             }
@@ -50,6 +52,17 @@ public class DoLogic : MonoBehaviour
             sequenceStep = 0;
             playButton.GetComponent<Button>().interactable = true;
         }
+    }
+
+    IEnumerator OnClickButton(int button)
+    {
+        CanvasGroup canvasGroup = buttons[button].GetComponent<CanvasGroup>();
+        while (canvasGroup.alpha < 1)
+        {
+            canvasGroup.alpha += Time.deltaTime / 1 * 2;
+            yield return null;
+        }
+        canvasGroup.alpha = 0.3f;
     }
 
     IEnumerator HighlightButton()
