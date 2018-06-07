@@ -73,7 +73,7 @@ public class DoLogic : MonoBehaviour
             CanvasGroup canvasGroup = buttons[sequence[i]].GetComponent<CanvasGroup>();
             while (canvasGroup.alpha < 1)
             {
-                canvasGroup.alpha += Time.deltaTime / 1 * (sequence.Count + 1);
+                canvasGroup.alpha += Time.deltaTime / 2 * (sequence.Count + 1);
                 yield return null;
             }
             canvasGroup.alpha = 0.3f;
